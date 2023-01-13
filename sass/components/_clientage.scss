@@ -1,0 +1,30 @@
+.clientage {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+    
+    &__item {
+        width: 170px;
+        height: 92px;
+    }  
+    &__link {
+        border: 1px solid $linkIconColor;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        fill: $linkIconColor;
+        width: 100%;
+        height: 100%;
+        border-radius: 4px;
+        transition-property: fill, border;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+        fill: $acentTextColor;
+        border-color: $acentTextColor;
+        }
+    }       
+}
+

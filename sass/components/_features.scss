@@ -1,0 +1,36 @@
+.features {
+    display: flex;
+    gap: 30px;
+    
+    &__item {
+        flex-basis: 270px;
+    }
+
+    &__icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: $secondaryPageColor;
+        height: 120px;
+        width: 270px;
+        border-radius: 4px;
+        margin-bottom: 30px;
+    }
+
+    &__title {
+        color: $titleTextColor;
+        font-size: 14px;
+        line-height: 1.14;
+        text-transform: uppercase;
+        letter-spacing: 0.03em;
+
+        margin-bottom: 10px;
+    }
+
+    &__paragraph {
+        font-size: 14px;
+        line-height: 1.71;
+        letter-spacing: 0.03em;
+    }
+}
+

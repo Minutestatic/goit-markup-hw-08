@@ -1,0 +1,36 @@
+.address {
+    
+        &__item {
+            margin-top: 12px;
+        }
+        &__item:first-child {
+            margin-top: 0;
+        }
+        &__link {
+            color: $linkFooterColor;
+            font-style: normal;
+            font-size: 14px;
+            line-height: 1.71;
+            text-decoration: none;
+            letter-spacing: 0.03em;
+        
+            transition-property: color;
+            transition-duration: 250ms;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.21);
+
+            &:hover,
+            &:focus {
+                color: $acentTextColor;
+            }
+            &--map {
+            color: $witheTextColor;
+            }
+        }
+        
+        
+}
+
+
+
+
+
