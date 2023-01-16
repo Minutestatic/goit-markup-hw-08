@@ -1,13 +1,13 @@
 .clientage {
     display: flex;
+    flex-wrap: wrap;
     gap: 30px;
-    align-items: center;
-    justify-content: center;
     
     &__item {
-        width: 170px;
+        width: 210px;
         height: 92px;
-    }  
+    }
+
     &__link {
         border: 1px solid $linkIconColor;
         display: flex;
@@ -20,11 +20,11 @@
         transition-property: fill, border;
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    &:hover,
-    &:focus {
-        fill: $acentTextColor;
-        border-color: $acentTextColor;
-        }
-    }       
-}
 
+        &:hover,
+        &:focus {
+            fill: $acentTextColor;
+            border-color: $acentTextColor;
+        }
+    }
+}

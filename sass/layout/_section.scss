@@ -1,16 +1,20 @@
 .section {
-    padding-top: 94px;
-    padding-bottom: 94px;
-}
-.section--secondary-color {
-    background-color: $secondaryPageColor;
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    &--secondary-color {
+            background-color: #f5f4fa;
+        }
+
+        
 }
 .section-title {
     color: $titleTextColor;
-    font-size: 36px;
-    line-height: 1.16;
+    font-size: 28px;
+    line-height: 1.178;
     text-align: center;
     letter-spacing: 0.03em;
 
-    margin-bottom: 50px;
+    margin-bottom: 30px;
+        
 }

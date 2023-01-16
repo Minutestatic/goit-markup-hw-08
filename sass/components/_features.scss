@@ -1,9 +1,11 @@
 .features {
-    display: flex;
-    gap: 30px;
+
     
     &__item {
-        flex-basis: 270px;
+        margin-bottom: 30px;
+        &:last-child {
+            margin-bottom: 0;
+        }
     }
 
     &__icon {
@@ -11,16 +13,16 @@
         align-items: center;
         justify-content: center;
         background-color: $secondaryPageColor;
-        height: 120px;
-        width: 270px;
         border-radius: 4px;
         margin-bottom: 30px;
+        height: 120px;
     }
 
     &__title {
         color: $titleTextColor;
         font-size: 14px;
         line-height: 1.14;
+        text-align: center;
         text-transform: uppercase;
         letter-spacing: 0.03em;
 
