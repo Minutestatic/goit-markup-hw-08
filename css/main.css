@@ -105,7 +105,7 @@ address {
   margin: -1px;
 }
 
-.menu-toggle {
+.menu-button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -116,15 +116,22 @@ address {
       -ms-flex-pack: center;
           justify-content: center;
   padding: 0;
+  margin: 0;
   background-color: #fff;
   cursor: pointer;
   border: none;
 }
-.menu-toggle__icon {
-  fill: #212121;
+
+.menu-button .icon-cross {
+  display: none;
 }
-.menu-toggle__icon:focus, .menu-toggle__icon:hover {
-  fill: #188ce8;
+
+.menu-button.is-open .icon-cross {
+  display: block;
+}
+
+.menu-button.is-open .icon-menu {
+  display: none;
 }
 
 .button {
@@ -194,6 +201,9 @@ address {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   gap: 30px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .clientage__item {
   width: 210px;
@@ -290,8 +300,10 @@ address {
   display: none;
 }
 
-.section-work {
-  display: none;
+@media screen and (max-width: 1599px) {
+  .section-work {
+    display: none;
+  }
 }
 
 .social {
@@ -497,11 +509,15 @@ address {
 }
 
 .header {
+  position: relative;
   height: 60px;
   border-bottom: 1px solid #ececec;
 }
 .header__nav {
   display: none;
+}
+.header__nav.is-open {
+  display: block;
 }
 .header__container {
   height: 60px;

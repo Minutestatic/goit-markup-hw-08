@@ -1,20 +1,24 @@
-.menu-toggle {
+.menu-button {
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 0;
+    margin: 0;
     background-color: #fff;
     cursor: pointer;
     border: none;
+}
 
-   &__icon {
-    fill: $titleTextColor;
+.menu-button .icon-cross {
+    display: none;
+} 
 
-    &:focus,
-    &:hover{
-        fill: $acentButtonColor;
-    }
-   }
+.menu-button.is-open .icon-cross {
+    display: block;
+}
+
+.menu-button.is-open .icon-menu {
+    display: none;
 }
 
 .button {

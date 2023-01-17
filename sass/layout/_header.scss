@@ -1,8 +1,13 @@
 .header {
+    position: relative;
     height: 60px;
     border-bottom: 1px solid #ececec;
     &__nav {
         display: none;
+        
+        &.is-open {
+            display: block;
+        }
     }
 
     &__container {

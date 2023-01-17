@@ -1,12 +1,16 @@
 .clientage {
     display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
+        flex-wrap: wrap;
+        gap: 30px;
+        justify-content: center;
+    
     
     &__item {
         width: 210px;
         height: 92px;
+       
     }
+        
 
     &__link {
         border: 1px solid $linkIconColor;

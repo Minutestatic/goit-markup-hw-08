@@ -19,23 +19,14 @@
       <div class="header__container container">
         <a href="./index.html" class="logo">Web<span class="logo__text">Studio</span></a>
 
-        <button
-          type="button"
-          class="menu-toggle js-open-menu"
-          data-menu-button
-          aria-expanded="false"
-        >
-          <svg
-            class="menu-toggle__icon"
-            width="40"
-            height="40"
-            aria-label="Перемикач мобільного меню"
-          >
-            <use href="./images/icon.svg#icon-menu"></use>
+        <button type="button" class="menu-button" data-menu-button aria-expanded="false">
+          <svg width="40" height="40" aria-label="Перемикач мобільного меню">
+            <use class="icon-cross" href="./images/icon.svg#icon-menu-close"></use>
+            <use class="icon-menu" href="./images/icon.svg#icon-menu"></use>
           </svg>
         </button>
 
-        <nav class="header__nav">
+        <nav class="header__nav" data-menu>
           <ul class="header__list list">
             <li class="header__item">
               <a href="./index.html" class="header__link header__link--current">Студія</a>
@@ -577,6 +568,7 @@
         </form>
       </div>
     </div>
+    <script src="./js/menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>
