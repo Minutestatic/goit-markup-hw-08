@@ -19,14 +19,13 @@
       <div class="header__container container">
         <a href="./index.html" class="logo">Web<span class="logo__text">Studio</span></a>
 
-        <button type="button" class="menu-button" data-menu-button aria-expanded="false">
+        <button type="button" class="menu-button js-open-menu">
           <svg width="40" height="40" aria-label="Перемикач мобільного меню">
-            <use class="icon-cross" href="./images/icon.svg#icon-menu-close"></use>
             <use class="icon-menu" href="./images/icon.svg#icon-menu"></use>
           </svg>
         </button>
 
-        <nav class="header__nav" data-menu>
+        <nav class="header__nav">
           <ul class="header__list list">
             <li class="header__item">
               <a href="./index.html" class="header__link header__link--current">Студія</a>
@@ -468,6 +467,43 @@
       </div>
     </footer>
 
+    <!-- Мобильное меню -->
+
+    <div class="mobile-menu js-menu-container">
+      <div class="container">
+        <button type="button" class="mobile-menu__button js-close-menu">
+          <svg width="40" height="40">
+            <use class="icon-menu-close" href="./images/icon.svg#icon-menu-close"></use>
+          </svg>
+        </button>
+
+        <nav class="mobile-menu__nav">
+          <ul class="mobile-menu__nav-list list">
+            <li class="mobile-menu__nav-item">
+              <a href="./index.html" class="mobile-menu__nav-link">Студія</a>
+            </li>
+            <li class="mobile-menu__nav-item">
+              <a href="./portfolio.html" class="mobile-menu__nav-link">Портфоліо</a>
+            </li>
+            <li class="mobile-menu__nav-item">
+              <a href="#" class="mobile-menu__nav-link">Контакти</a>
+            </li>
+          </ul>
+        </nav>
+
+        <ul class="mobile-menu__contact-list list">
+          <li class="mobile-menu__contact-itam">
+            <a href="mailto:info@devstudio.com" class="mobile-menu__contact-link">
+              info@devstudio.com
+            </a>
+          </li>
+          <li class="mobile-menu__contact-item">
+            <a href="tel:+380961111111" class="mobile-menu__contact-link"> +38 096 111 11 11 </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
     <!-- Модальное окно -->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
@@ -481,7 +517,7 @@
 
         <form class="modal-form">
           <ul class="modal-form__list list">
-            <li class="modal-form__iteam">
+            <li class="modal-form__item">
               <label class="modal-form__lable" for="user-name">Ім'я</label>
               <div class="modal-form__field">
                 <input
@@ -499,7 +535,7 @@
               </div>
             </li>
 
-            <li class="modal-form__iteam">
+            <li class="modal-form__item">
               <label class="modal-form__lable" for="user-tel">Телефон</label>
               <div class="modal-form__field">
                 <input
@@ -533,7 +569,7 @@
               </div>
             </li>
 
-            <li class="modal-form__iteam">
+            <li class="modal-form__item">
               <label class="modal-form__lable" for="user-comment">Коментар</label>
               <textarea
                 class="modal-form__textarea"
@@ -544,7 +580,7 @@
               </textarea>
             </li>
 
-            <li class="modal-form__iteam">
+            <li class="modal-form__item">
               <div class="checkbox">
                 <input
                   class="checkbox__input"

@@ -2,18 +2,15 @@
     position: relative;
     height: 60px;
     border-bottom: 1px solid #ececec;
-    &__nav {
-        display: none;
-        
-        &.is-open {
-            display: block;
-        }
-    }
+    
 
     &__container {
         height: 60px;
         display: flex;
         align-items: center;
         justify-content: space-between;
+    }
+    &__nav {
+        display: none;
     }
 }
