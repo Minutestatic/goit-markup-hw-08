@@ -46,6 +46,14 @@
     margin-bottom: 28px;
     margin-right: 0;
 
+    @media screen and (min-width:1200px) {
+            padding-top: 24px;
+            padding-bottom: 25px;
+    
+            font-size: 26px;
+            line-height: 1.19;
+        }
+
     &__text {
         color: $witheTextColor;
     }
