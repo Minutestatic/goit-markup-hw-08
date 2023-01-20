@@ -8,6 +8,10 @@
     &__item {
         width: 210px;
         height: 92px;
+
+        @media screen and (min-width: 768px) {
+            width: 226px;
+        }
        
     }
         

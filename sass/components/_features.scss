@@ -1,8 +1,17 @@
 .features {
+     @media screen and (min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
 
-    
     &__item {
         margin-bottom: 30px;
+
+        @media screen and (min-width: 768px) {
+        flex-basis: 354px;
+        }
+
         &:last-child {
             margin-bottom: 0;
         }
@@ -16,17 +25,22 @@
         border-radius: 4px;
         margin-bottom: 30px;
         height: 120px;
+        
     }
 
     &__title {
         color: $titleTextColor;
         font-size: 14px;
-        line-height: 1.14;
+        line-height: 1.142;
         text-align: center;
         text-transform: uppercase;
         letter-spacing: 0.03em;
 
         margin-bottom: 10px;
+
+        @media screen and (min-width: 768px) {
+            text-align:left ;
+        }
     }
 
     &__paragraph {
