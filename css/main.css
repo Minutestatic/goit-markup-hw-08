@@ -326,7 +326,7 @@ address {
     gap: 30px;
   }
 }
-@media screen and (min-width: 120px) {
+@media screen and (min-width: 1200px) {
   .features {
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
@@ -342,7 +342,7 @@ address {
         flex-basis: 354px;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .features__item {
     -ms-flex-preferred-size: 270px;
         flex-basis: 270px;
@@ -836,7 +836,7 @@ address {
     width: 354px;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .team__img {
     width: 270px;
   }
