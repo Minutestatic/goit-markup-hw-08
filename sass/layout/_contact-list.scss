@@ -5,16 +5,18 @@
         flex-direction: column;
         align-items: flex-start;
     }
-    @media screen and (min-width: 1600px) {
+    @media screen and (min-width: 1200px) {
         display: flex;
         align-items: center;
+        flex-direction:row ;
     }
 
     &__item {
         margin-bottom: 10px;
     
-        @media screen and (min-width: 1600px) {
+        @media screen and (min-width: 1200px) {
             margin-right: 40px;
+            margin-bottom: 0px;
         }
     
         &:last-child {
@@ -40,7 +42,9 @@
         color: $primaryTextColor;
         fill: $primaryTextColor;
         
-        @media screen and (min-width: 1600px) {
+        @media screen and (min-width: 1200px) {
+            padding-top: 32px;
+                padding-bottom: 32px;
             
             font-size: 14px;
             line-height: 1.14;
@@ -57,7 +61,7 @@
     &__icon {
         margin-right: 8px;
 
-        @media screen and (min-width: 1600px) {
+        @media screen and (min-width: 1200px) {
             margin-right: 10px;
         }
     }

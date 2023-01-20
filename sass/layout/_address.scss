@@ -4,6 +4,11 @@
     @media screen and (min-width: 768px) {
         margin-right: 165px;
     }
+    @media screen and (min-width: 1200px) {
+        margin-right: 0;
+        margin-bottom: 0;
+        text-align: left;
+    }
     &__list {
         margin-top: 28px;
     }

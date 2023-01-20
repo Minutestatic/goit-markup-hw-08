@@ -4,13 +4,21 @@
         flex-wrap: wrap;
         gap: 30px;
     }
+         @media screen and (min-width: 120px) {
+             flex-wrap: nowrap;
+             gap: 30px;
+         }
 
     &__item {
         margin-bottom: 30px;
 
         @media screen and (min-width: 768px) {
-        flex-basis: 354px;
+            flex-basis: 354px;
         }
+        
+            @media screen and (min-width: 768px) {
+                flex-basis: 270px;
+            }
 
         &:last-child {
             margin-bottom: 0;
@@ -25,6 +33,10 @@
         border-radius: 4px;
         margin-bottom: 30px;
         height: 120px;
+            @media screen and (min-width: 1200px) {
+                
+                width: 270px;
+            }
         
     }
 

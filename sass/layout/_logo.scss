@@ -8,16 +8,20 @@
     font-family: Raleway, sans-serif;
     padding-top: 16px;
     padding-bottom: 16px;
-
-    &__text {
-            color: $blackTextColor;
-        }
-    
-    @media screen and (min-weight: 1600px) {
+    @media screen and (min-width:1200px) {
+        display: flex;
+        align-self: center;
+        padding-top: 24px;
+        padding-bottom: 25px;
         
-        
+        font-size: 26px;
+        line-height: 1.19;
+        margin-right: 93px;
     }
 
+    &__text {
+         color: $blackTextColor;
+     }
 }
 
 .logo-footer {
@@ -28,6 +32,19 @@
         color: $acentTextColor;
         text-decoration: none;
         font-family: Raleway, sans-serif;
+
+    &__text {
+        color: $witheTextColor;
+    }
+}
+
+
+
+.logo-footer {
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-bottom: 28px;
+    margin-right: 0;
 
     &__text {
         color: $witheTextColor;
