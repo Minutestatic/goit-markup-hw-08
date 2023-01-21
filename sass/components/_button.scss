@@ -123,3 +123,28 @@
         background-color: $acentButtonColor;
     }
 }
+
+.filter-list__button {
+    color: $titleTextColor;
+    background-color: $secondaryPageColor;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    letter-spacing: 0.03em;
+
+    padding: 6px 22px;
+    text-align: center;
+    border-radius: 4px;
+
+    transition-property: color, box-shadow, background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        color: $witheTextColor;
+        background-color: $acentTextColor;
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+            1px 4px 6px rgba(0, 0, 0, 0.16);
+    }
+}
