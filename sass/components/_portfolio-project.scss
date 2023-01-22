@@ -1,16 +1,31 @@
 .project {
     display: flex;
-
-    gap: 30px;
     flex-wrap: wrap;
+    gap: 30px;
+    
+
+    &__item {
+        width: 450px;
+        @media screen and (min-width: 768px) {
+            width: 354px;
+        }
+            @media screen and (min-width: 1200px) {
+               width: 370px;
+            }
+    }
 
     &__link {
-        display: block;
+        display: flex;
+        flex-direction: column;
         text-decoration: none;
-
+        height: 100%;
         transition-property: box-shadow;
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        
+        @media screen and (min-width: 1200px) {
+            display: block;
+        }
 
         &:hover,
         &:focus {
@@ -30,19 +45,27 @@
         left: 0;
         width: 100%;
         height: 100%;
-        padding: 64px 24px;
-
         transform: translateY(100%);
         transition-property: transform;
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        padding: 77px 24px;
 
         font-size: 18px;
-        line-height: 28px;
+        line-height: 1.555;
         letter-spacing: 0.03em;
-
+        opacity: 1;
         color: $witheTextColor;
         background-color: rgba(33, 150, 243, 0.9);
+        
+
+        @media screen and (min-width: 768px) {
+            padding-top: 49px;
+        }
+        
+            @media screen and (min-width: 1200px) {
+                padding: 64px 24px;
+            }
 
         .project__link:hover &,
         .project__link:focus & {
@@ -52,24 +75,26 @@
 
 
     &__container {
+        flex-grow: 1;
         border-left: 1px solid #eeeeee;
         border-right: 1px solid #eeeeee;
         border-bottom: 1px solid #eeeeee;
         padding: 20px 24px;
-    }
+        }
+    
 
     &__title {
-        color: $titleTextColor;
+        margin-bottom: 4px;
         font-size: 18px;
         line-height: 2;
-        letter-spacing: 0.06em;
-        margin-bottom: 4px;
+        letter-spacing: .06em;
+        color: $titleTextColor;
     }
 
     &__paragraph {
-        color: $primaryTextColor;
         font-size: 16px;
-        line-height: 1.85;
+        line-height: 1.875;
         letter-spacing: 0.03em;
+        color: $primaryTextColor;
     }
 }
