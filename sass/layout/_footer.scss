@@ -13,12 +13,12 @@
             @media screen and (min-width: 768px) {
                 display: flex;
                 flex-wrap: wrap;
-                justify-content: center;
-                align-items: baseline;
-                max-width: 768px;
+                justify-content: space-around;
+                min-width: 768px;
+                align-items: baseline
             }
             @media screen and (min-width: 1200px) {
-                justify-content: space-between;
+                
                 max-width: 1200px;
                 gap: 93px;
             }
@@ -40,6 +40,10 @@
             }
     }
 
-    .footer-social{
+    .footer-social  {
         margin-bottom: 60px;
+
+        @media screen and (min-width: 768px) {
+            margin-bottom: 0;
+        }
     }

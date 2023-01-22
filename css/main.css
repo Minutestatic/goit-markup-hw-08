@@ -1087,14 +1087,29 @@ address {
   margin-bottom: 16px;
 }
 
-.address {
-  text-align: center;
+.address-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-bottom: 60px;
 }
-@media screen and (min-width: 768px) {
-  .address {
-    margin-right: 165px;
+@media screen and (min-width: 1200px) {
+  .address-container {
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
   }
+}
+
+.address {
+  text-align: center;
 }
 @media screen and (min-width: 1200px) {
   .address {
@@ -1102,9 +1117,6 @@ address {
     margin-bottom: 0;
     text-align: left;
   }
-}
-.address__list {
-  margin-top: 28px;
 }
 .address__item {
   margin-top: 12px;
@@ -1277,20 +1289,16 @@ address {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    min-width: 768px;
     -webkit-box-align: baseline;
         -ms-flex-align: baseline;
             align-items: baseline;
-    max-width: 768px;
   }
 }
 @media screen and (min-width: 1200px) {
   .footer__container {
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
     max-width: 1200px;
     gap: 93px;
   }
@@ -1314,6 +1322,11 @@ address {
 
 .footer-social {
   margin-bottom: 60px;
+}
+@media screen and (min-width: 768px) {
+  .footer-social {
+    margin-bottom: 0;
+  }
 }
 
 .header {
@@ -1443,7 +1456,7 @@ address {
 .logo-footer {
   font-weight: 700;
   font-size: 24px;
-  line-height: 1.16px;
+  line-height: 1.16;
   letter-spacing: 0.03em;
   color: #2196f3;
   text-decoration: none;
@@ -1454,15 +1467,10 @@ address {
 }
 
 .logo-footer {
-  padding-top: 0;
-  padding-bottom: 0;
   margin-bottom: 28px;
-  margin-right: 0;
 }
 @media screen and (min-width: 1200px) {
   .logo-footer {
-    padding-top: 24px;
-    padding-bottom: 25px;
     font-size: 26px;
     line-height: 1.19;
   }
