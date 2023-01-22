@@ -1204,6 +1204,26 @@ address {
     margin-right: 10px;
   }
 }
+.contact-list__icon--envelope {
+  width: 14px;
+  height: 10px;
+}
+@media screen and (min-width: 1200px) {
+  .contact-list__icon--envelope {
+    width: 16px;
+    height: 12px;
+  }
+}
+.contact-list__icon--smartphone {
+  width: 10px;
+  height: 14px;
+}
+@media screen and (min-width: 1200px) {
+  .contact-list__icon--smartphone {
+    width: 10px;
+    height: 16px;
+  }
+}
 
 .container {
   max-width: 480px;
