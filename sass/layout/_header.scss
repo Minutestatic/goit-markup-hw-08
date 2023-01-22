@@ -11,6 +11,9 @@
         @media screen and (min-width: 768px) {
             height: 80px;
         }
+        @media screen and (min-width: 1200px) {
+            justify-content: flex-start;
+        }
     }
 
     &__nav {
@@ -20,7 +23,7 @@
             justify-content: space-between;
         }
         @media screen and (min-width: 1200px) {
-            margin-right: 305px;
+            margin-right: auto;
         }
     }
     &__list {
@@ -29,7 +32,7 @@
     }
     &__item {
         position: relative;
-        margin-right: 40px;
+        margin-right: 50px;
 
         &:last-child {
             margin-right: 0;

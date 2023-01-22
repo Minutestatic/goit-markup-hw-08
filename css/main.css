@@ -1320,6 +1320,13 @@ address {
     height: 80px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .header__container {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+}
 .header__nav {
   display: none;
 }
@@ -1335,7 +1342,7 @@ address {
 }
 @media screen and (min-width: 1200px) {
   .header__nav {
-    margin-right: 305px;
+    margin-right: auto;
   }
 }
 .header__list {
@@ -1348,7 +1355,7 @@ address {
 }
 .header__item {
   position: relative;
-  margin-right: 40px;
+  margin-right: 50px;
 }
 .header__item:last-child {
   margin-right: 0;
