@@ -1599,11 +1599,16 @@ address {
 }
 .mobile-menu__contact-link {
   font-weight: 500;
-  font-size: 34px;
+  font-size: 24px;
   line-height: 1.176;
   letter-spacing: 0.02em;
   text-decoration: none;
   color: #2196f3;
+}
+@media screen and (min-width: 378px) {
+  .mobile-menu__contact-link {
+    font-size: 34px;
+  }
 }
 .mobile-menu__contact-link--mail {
   font-size: 24px;
@@ -1615,6 +1620,12 @@ address {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 10px;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
 .mobile-menu__social-item {
   border-right: 1px solid rgba(33, 33, 33, 0.2);
