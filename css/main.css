@@ -354,6 +354,7 @@ address {
   .features__item {
     -ms-flex-preferred-size: 354px;
         flex-basis: 354px;
+    margin-bottom: 0;
   }
 }
 @media screen and (min-width: 1200px) {
