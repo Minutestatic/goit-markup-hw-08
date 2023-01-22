@@ -431,6 +431,8 @@ address {
   .hero {
     max-width: 768px;
     min-height: 400px;
+    padding-left: 204px;
+    padding-right: 204px;
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/hero-tablet.jpg");
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-tablet.jpg");
   }
@@ -455,6 +457,20 @@ address {
   .hero {
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/hero@2x.jpg");
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero@2x.jpg");
+  }
+}
+.hero__container {
+  max-width: 480px;
+  margin: 0 auto;
+}
+@media screen and (min-width: 768px) {
+  .hero__container {
+    max-width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero__container {
+    max-width: 1200px;
   }
 }
 .hero__title {
